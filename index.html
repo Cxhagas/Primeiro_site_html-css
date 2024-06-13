@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando meu primeiro site com HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #d9534f;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .cta-button {
+            background-color: #d9534f;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .cta-button:hover {
+            background-color: #c9302c;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 18px;
+            text-align: left;
+        }
+        table th, table td {
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+        }
+        table th {
+            background-color: #f2f2f2;
+        }
+        table tr:nth-of-type(even) {
+            background-color: #f9f9f9;
+        }
+        table tr:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Biobanco do Hospital de Clínicas da Universidade Federal do Paraná</h1>
+    <p>Doe sangue, salve vidas</p>
+</header>
+
+<nav>
+    <a href="#" onclick="openTab(event, 'about')">Sobre</a>
+    <a href="#" onclick="openTab(event, 'process')">Processo</a>
+    <a href="#" onclick="openTab(event, 'contact')">Endereço e Contato</a>
+    <a href="#" onclick="openTab(event, 'donate')">Agendamentos</a>
+</nav>
+
+<div class="container">
+    <div id="about" class="tabcontent">
+        <h2>Sobre:</h2>
+        <p>O Biobanco do Hospital de Clínicas da Universidade Federal do Paraná (HC-UFPR) é uma iniciativa importante na área da saúde e pesquisa biomédica no Brasil. Localizado em Curitiba, Paraná, o biobanco desempenha um papel crucial na coleta, processamento, armazenamento e distribuição de amostras biológicas para pesquisa científica.</p>
+        <p>O principal objetivo do Biobanco do HC-UFPR é apoiar pesquisas científicas de alta qualidade, fornecendo acesso a amostras biológicas bem caracterizadas e clinicamente anotadas. Isso inclui amostras de tecidos, fluidos biológicos, e outros materiais biológicos relevantes para estudos genéticos, biomédicos e epidemiológicos.</p>
+        <img src="https://bancarios.com.br/s/wp-content/uploads/2019/06/junhovermelho.jpg" width="100%" height="auto" alt="Imagem do Biobanco">
+        <h2>Importância da Doação de Sangue</h2>
+        <ul>
+            <li><strong>Salvar Vidas:</strong> Uma única doação de sangue pode salvar até três vidas, já que o sangue é separado em diferentes componentes (glóbulos vermelhos, plaquetas e plasma) que podem ser usados em diversas situações médicas.</li>
+            <li><strong>Emergências Médicas:</strong> Em casos de acidentes, cirurgias, partos complicados e tratamentos de câncer, a necessidade de sangue é crucial.</li>
+            <li><strong>Doenças Crônicas:</strong> Pacientes com anemia falciforme, talassemia e outras condições médicas crônicas dependem de transfusões regulares de sangue.</li>
+            <li><strong>Papel Crucial em Hospitais:</strong> Hospitais e centros de saúde precisam de um suprimento constante de sangue para tratamentos e intervenções médicas diárias.</li>
+        </ul>
+        <h2>Quem Pode Doar?</h2>
+        <ul>
+            <li><strong>Idade:</strong> Entre 16 e 69 anos (menores de idade precisam de consentimento dos pais ou responsáveis).</li>
+            <li><strong>Peso:</strong> No mínimo 50 kg.</li>
+            <li><strong>Saúde:</strong> Estar em boas condições de saúde e sem doenças transmissíveis pelo sangue.</li>
+            <li><strong>Intervalo:</strong> Doadores do sexo masculino podem doar a cada 2 meses, e doadoras do sexo feminino a cada 3 meses.</li>
+        </ul>
+    </div>
+
+    <div id="process" class="tabcontent" style="display:none;">
+        <h2>Processo de Doação:</h2>
+        <p>Entenda o processo de doação de sangue, desde a triagem até a recuperação.</p>
+        <ul>
+            <li><strong>Triagem inicial:</strong> É uma entrevista com um profissional de saúde para verificar se o doador está apto.</li>
+            <li><strong>Coleta de sangue:</strong> A coleta de sangue geralmente leva entre 8 a 10 minutos, e cerca de 450 ml de sangue são retirados.</li>
+        </ul>
+        <h2>Cuidados pós-doação:</h2>
+        <ul>
+            <li><strong>Hidratação:</strong> Beber bastante água nas 24 horas seguintes à doação.</li>
+            <li><strong>Alimentação:</strong> Manter uma alimentação saudável e equilibrada.</li>
+            <li><strong>Evitar Esforço:</strong> Não praticar exercícios físicos intensos no dia da doação.</li>
+            <li><strong>Observar Sintomas:</strong> Qualquer mal-estar deve ser comunicado ao banco de sangue.</li>
+        </ul>
+    </div>
+
+    <div id="contact" class="tabcontent">
+        <h2>Endereço e Contato</h2>
+        <p><strong>Telefone:</strong> (41) 3360 - 1875</p>
+        <p><strong>Aplicativo móvel:</strong> (41) 98871-9474</p>
+        <p><strong>Endereço:</strong> Av. Agostinho Leão Junior, 108 - Alto da Glória, Curitiba - PR, 80030-110</p>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.154156268171!2d-49.27105628502054!3d-25.41908563793806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce43de3ae2e89%3A0xb257f3a0401451af!2sAv.%20Agostinho%20Le%C3%A3o%20Junior%2C%20108%20-%20Alto%20da%20Gl%C3%B3ria%2C%20Curitiba%20-%20PR%2C%2080030-110!5e0!3m2!1sen!2sbr!4v1623581046905!5m2!1sen!2sbr"
+            width="100%"
+            height="400"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+        ></iframe>
+    </div>
+
+    <div id="donate" class="tabcontent" style="display:none;">
+        <h2>Doe Agora</h2>
+        <p><a href="https://doador.biobanco.hc.ufpr.br/PrototipoBiobanco/"  class="cta-button" target="_blank">Agende sua Doação</a></p>
+        <h2>Agendamentos</h2>
+        <table>
+            <tr>
+                <th>Serviços</th>
+                <th>Segunda a Sexta</th>
+                <th>Sábados</th>
+                <th>Feriados</th>
+            </tr>
+            <tr>
+                <td>Doação de Sangue</td>
+                <td>07h - 17h</td>
+                <td>07h - 12h</td>
+                <td> - </td>
+            </tr>
+            <tr>
+                <td>Doação de Sangue</td>
+                <td>07h - 17h</td>
+                <td>07h - 12h</td>
+                <td> - </td>
+            </tr>
+            <tr>
+                <td>Doação de Sangue</td>
+                <td>07h - 17h</td>
+                <td>07h - 12h</td>
+                <td> - </td>
+            </tr>
+            <tr>
+                <td>Doação de Sangue</td>
+                <td>07h - 17h</td>
+                <td>07h - 12h</td>
+                <td> - </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<script>
+    function openTab(evt, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByTagName("a");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+</script>
+</body>
+</html>
