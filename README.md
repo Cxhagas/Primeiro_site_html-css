@@ -4,7 +4,7 @@
 ### Descrição
 O Biobanco do HC-UFPR é uma iniciativa crucial na área da saúde e pesquisa biomédica no Brasil. O site foi criado para informar sobre a importância da doação de sangue, o processo de doação, detalhes de contato e agendamentos.
 
-Funcionalidades
+# Funcionalidades
 Páginas Principais:
 
 Sobre: Informações sobre o biobanco e sua missão.
@@ -13,21 +13,18 @@ Endereço e Contato: Informações de contato e localização.
 Agendamentos: Horários disponíveis para doação.
 Recursos:
 
-Responsividade: Design adaptável para diferentes dispositivos.
-Mapa Interativo: Utilização do Google Maps para exibir a localização do biobanco.
-Tecnologias Utilizadas
-HTML
-CSS
-Como Usar
-Clone o repositório:
+- Responsividade: Design adaptável para diferentes dispositivos.
+- Mapa Interativo: Utilização do Google Maps para exibir a localização do biobanco.
 
-bash
-Copiar código
+# Tecnologias Utilizadas
+- HTML
+- CSS
+
+# Como Usar
+Clone o repositório:
+- Copiar código
 git clone https://github.com/Cxhagas/Primeiro_site_html-css
 Abra o arquivo index.html em qualquer navegador web moderno.
 
-Contribuição
+# Contribuição
 Contribuições são bem-vindas! Sinta-se à vontade para enviar pull requests com melhorias ou correções.
-
-Licença
-Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para mais detalhes.
